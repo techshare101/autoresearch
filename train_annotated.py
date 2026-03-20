@@ -481,8 +481,7 @@ print(f"Model config: {asdict(config)}")
 
 with torch.device("meta"):
     model = GPT(config)
-model.to_empty(device=device)
-model.init_weights()
+model.to_empty(device=device model.init_weights()
 
 param_counts = model.num_scaling_params()
 print("Parameter counts:")
